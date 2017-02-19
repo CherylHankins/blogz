@@ -10,7 +10,9 @@
 <p>{{ post.body }}</p>
 <!-- TODO add author w/ link to author's blog page -->
 <p class="post-author">
-    written by {{ post.author }}
+    <a href = "/blog/{{ post.author.username }}">
+        written by {{ post.author.username }}
+    </a>
 </p>
 
 
