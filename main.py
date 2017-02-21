@@ -290,7 +290,7 @@ class LogoutHandler(BlogHandler):
 
     def get(self):
         self.logout_user()
-        self.redirect('/blog')
+        self.redirect('/')
 
 app = webapp2.WSGIApplication([
     ('/', IndexHandler),
